@@ -330,7 +330,7 @@ body{
 }
 
 
-@media (max-width: 760px) {
+@media (max-width: 950px) {
     body{
         margin: 0;
         padding-top: 45px;
@@ -477,6 +477,10 @@ body{
     .product-home h1{
         width: 100%;
     }
+    .card-product .desc{
+        visibility: visible;
+        opacity: 1;
+    }
 }
 .card-wrapper{
     display: flex;
@@ -486,6 +490,10 @@ body{
 }
 .swiper-slide{
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    display: flex !important;
 }
 .swiper-wrapper{
     justify-content:space-between;
@@ -606,7 +614,7 @@ body{
 }
 @media screen and (max-width: 768px) {
   .slide-content{
-    margin: 0 10px;
+    margin: 0;
   }
   .swiper-navBtn{
     display: none;
