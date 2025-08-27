@@ -99,13 +99,12 @@ svg:hover {
 }
 body{
     margin: 0;
-    padding-top: 50px;
 }
 /* BANNER */
 .card-desc{
     position: absolute;
-    margin-top: 60px;
-    margin-left: 60px;
+    top: 100px;
+    left: 80px;
     z-index: 100;
     width: 280px;
     height: auto;
@@ -146,7 +145,7 @@ body{
 .img-banner{
     background-color: rgb(156, 156, 156);
     width: 100%;
-    height: 100%;
+    height: 750px;
 }
 .img-banner video{
     width: 100%;
@@ -264,6 +263,7 @@ body{
     gap: 50px;
 }
 .card-product{
+    position: relative;
     color: white;
     width:fit-content;
     transition: filter 2s ease;
@@ -289,7 +289,8 @@ body{
     height: 500px;
     position: absolute;
     z-index: 10;
-    margin-top: -500px;
+    top: 0;
+    /* margin-top: -500px; */
     padding: 20px;
     transition: opacity 0.5s ease, visibility 0.5s;
     cursor: pointer;
@@ -464,14 +465,15 @@ body{
     }
 
     /* END NAVBAR */
+
+    /* Banner */
     .img-banner{
-    background-color: rgb(156, 156, 156);
-    width: 100%;
-    height: 100%;
-}
+        background-color: rgb(156, 156, 156);
+        width: 100%;
+        height: 100%;
+    }
 
     /* ABOUT */
-
     .about{
         display: none;
         width: 100%;
@@ -487,17 +489,16 @@ body{
 
     } 
 
-
-    /* END ABOUT */
+    /* article */
     #article-home{
         flex-direction: column;
     }
     #article-home img{
-        width: 350px;
+        width: 100%;
         height: 450px;
         border-radius: 0;
     } 
-    #article-home #column{
+    #article-home #column #desc{
         padding: 10%;
     }
     #article-home .top{
@@ -507,15 +508,16 @@ body{
     #article-home .buttom{
         display: none;
     }
-    #article-home img{
-        width: 100%;
-    }
     #article-home p{
         width: 100%;
 
     }
     #article-home h1{
         width: 100%;
+    }
+    /* product */
+    .product-home{
+        margin: 100px 0 100px 0;
     }
     .product-home h1{
         width: 100%;
