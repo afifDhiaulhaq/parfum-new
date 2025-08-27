@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Hello, world!</title>
+  </head>
+  <nav id="navbar" class="navbar navbar-expand-sm solid">
+      <div class="container-fluid">
+          <img id="logo-mobile" src="../asset/logo.png" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <i data-feather="menu"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+                  <div id="container-navbar">
+
+                      <div id="menu">
+                          <a class="nav-link" href="#">CATALOG</a>
+                          <a class="nav-link" href="#">ARTICLE</a>
+                          <a class="nav-link" href="#">ABOUT</a>
+                      </div>
+
+                      <div id="logo">
+                          <img src="../asset/logo.png" alt="">
+                      </div>
+
+                      <div class="dropdown" id="contact">
+                          <i data-feather="mail"id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">Whatsup</a></li>
+                              <li><a class="dropdown-item" href="#">Tiktok</a></li>
+                              <li><a class="dropdown-item" href="#">X</a></li>
+                          </ul>
+                      </div>
+
+                  </div>
+          </div>
+
+      </div>
+  </nav>
+  <body>
+
+    <div class="hero">
+        <div class="div" id="bg-hero">
+            <img src="../asset/BG-hero-CORPORAT.jpg" alt="" >
+        </div>
+        <div class="containt-hero">
+            <div class="img-hero">
+                <img src="../asset/corporate-wbg.png" alt="">
+            </div>
+            <div class="desc-hero">
+                <h1>CORPORAT</h3>
+                <div id="desc-1">
+                    <p>Eau de Parfum</p>
+                    <p> 50 ML | 10 ML</p>
+                </div>
+                <div id="desc-2">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nulla maiores eveniet suscipit voluptate amet quasi rem consequatur, harum possimus veritatis corporis architecto impedit quas magni enim commodi nemo placeat!</p>
+                </div>
+                <div class="notes">
+                    <div class="note">
+                        Ambery
+                    </div>
+                    <div class="note">
+                        Powdery
+                    </div>
+                    <div class="note">
+                        Woody
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-product reveal">
+            <div class="slide-container swiper">
+                <div class="slide-content" id="img-product-content">
+                    <div class="card-wrapper swiper-wrapper product-list">
+
+                        <div class="swiper-slide" id="img-product">
+                            <div class="img-product">
+                                <img src="../asset/gardern1 (1).jpeg" alt="" onclick="openPopup(this)">
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="img-product">
+                            <div class="img-product">
+                                <img src="../asset/corporat.jpeg" alt="" onclick="openPopup(this)">
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="img-product">
+                            <div class="img-product">
+                                <img src="../asset/copium 1jpeg.jpeg" alt="" onclick="openPopup(this)">
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="img-product">
+                            <div class="img-product">
+                                <img src="../asset/copium 1jpeg.jpeg" alt="" onclick="openPopup(this)">
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="img-product">
+                            <div class="img-product">
+                                <img src="../asset/copium 1jpeg.jpeg" alt="" onclick="openPopup(this)">
+                            </div>
+                        </div>
+       
+                    </div>
+                </div>
+               
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        <!-- Popup -->
+        
+    </div>
+    <div id="popup" class="popup" onclick="closePopup()">
+              <span class="close" onclick="closePopup()">&times;</span>
+              <img id="popupImg" src="">
+      </div>
+    
+
+    <div class="product-home reveal">
+        <h1><span style="font-weight: bolder;">CAPTURING</span> ESSENCE REFTECTING <span style="font-weight: bolder;">SOCIETY</span></h1>
+        <div class="product">
+            <h3>DISCOVERED OUR FRAGRANCES:</h3>
+        </div>
+        <div class="slide-container swiper">
+    <div class="slide-content">
+      <div class="card-wrapper swiper-wrapper product-list">
+        <div class="swiper-slide">
+            <div class="card-product">
+                <img src="../asset/gardern1 (1).jpeg" alt="">
+                <div class="desc">
+                    <div class="des-top">
+                        <p>PIEAPPLE | YLANG-YLANG</p>
+                    </div>
+                    <div class="desc-bottom">
+                        <h2>Garder of Word</h2>
+                        <p>Eeu de Parfume 50 ML | 10 ML</p>
+                        <div id="btn">
+                            <button>BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card-product">
+                <img src="../asset/corporat.jpeg" alt="">
+                <div class="desc">
+                    <div class="des-top">
+                        <p>PIEAPPLE | YLANG-YLANG</p>
+                    </div>
+                    <div class="desc-bottom">
+                        <h2>CORPORAT</h2>
+                        <p>Eeu de Parfume 50 ML | 10 ML</p>
+                        <div id="btn">
+                            <button>BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card-product">
+                <img src="../asset/copium 1jpeg.jpeg" alt="">
+                <div class="desc">
+                    <div class="des-top">
+                        <p>PIEAPPLE | YLANG-YLANG</p>
+                    </div>
+                    <div class="desc-bottom">
+                        <h2>COPIUM</h2>
+                        <p>Eeu de Parfume 50 ML | 10 ML</p>
+                        <div id="btn">
+                            <button>BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+      </div>
+    </div>
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+    </div>
+
+    <div class="footer">
+        <div class="column">
+            <h4>YOURXOCIETY</h4>
+            <p>Connect with us and be a part of xociety</p>
+        </div>
+        <div class="column">
+            <h6>CONTACT US</h6>
+            <p>Whatsup</p>
+            <p>Email</p>
+        </div>
+        <div class="column">
+            <h6>MARKETPLACE</h6>
+            <p>Shopi</p>
+            <p>Tokopedia</p>
+            <p>Tiktok Shop</p>
+
+        </div>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.remove('solid');
+            navbar.classList.add('transparent');
+        } else {
+            navbar.classList.remove('transparent');
+            navbar.classList.add('solid');
+        }
+        });
+
+        function revealOnScroll() {
+        const reveals = document.querySelectorAll(".reveal");
+
+        for (let i = 0; i < reveals.length; i++) {
+            const windowHeight = window.innerHeight;
+            const elementTop = reveals[i].getBoundingClientRect().top;
+            const revealPoint = 150;
+
+            if (elementTop < windowHeight - revealPoint) {
+            reveals[i].classList.add("active");
+            }
+        }
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+
+
+
+        var swiper = new Swiper(".slide-content", {
+            slidesPerView: 3,
+            spaceBetween: 0,
+            loop: true,
+            centerSlide: 'true',
+            fade: 'true',
+            grabCursor: 'true',
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            breakpoints:{
+                0: {
+                    slidesPerView: 1,
+                },
+                900: {
+                    slidesPerView: 2,
+                },
+                1200: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+        var swiper = new Swiper("#img-product-content", {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            loop: true,
+            centerSlide: 'true',
+            fade: 'true',
+            grabCursor: 'true',
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            breakpoints:{
+                0: {
+                    slidesPerView: 2,
+                },
+                900: {
+                    slidesPerView: 4,
+                },
+                1200: {
+                    slidesPerView: 4,
+                },
+            },
+        });
+
+        function openPopup(img) {
+            document.getElementById("popup").style.display = "flex";
+            document.getElementById("popupImg").src = img.src;
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+        
+    </script>
+  </body>
+</html>

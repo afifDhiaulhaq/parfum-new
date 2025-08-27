@@ -351,6 +351,93 @@ body{
     font-size: small;    
 }
 
+/*=== Catalog detail page === */
+
+/* Hero */
+
+.hero{
+    position: relative;
+    color: white;
+}
+.hero #bg-hero{
+    width: 100%;
+    height: 700px;
+    overflow: hidden; 
+}
+.hero #bg-hero img{
+    object-fit: cover; 
+    display: block; 
+    width: 100%;
+    height: 100%;
+}
+.containt-hero{
+    padding: 5%;
+    top: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+.containt-hero .img-hero{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containt-hero img{
+    object-fit: cover; 
+    display: block; 
+    width: 350px;
+    height: auto;
+}
+.containt-hero .desc-hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.containt-hero .desc-hero h1{
+    font-size: 50px;
+}
+.desc-hero #desc-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.desc-hero #desc-1 p{
+    margin: 0;
+}
+.desc-hero .notes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.desc-hero .notes .note{
+    border: 1px solid white;
+    padding: 5px;
+}
+
+/* image product */
+.image-product{
+    margin-top: 10px;
+} 
+.img-product img{
+    width: 100%;
+    height: 100%;
+}
+#img-product{
+    width: 300px !important;
+    height: 300px !important;
+}
+#img-product-content{
+    height: 100% !important;
+    position: relative;
+}
 
 
 @media (max-width: 950px) {
@@ -539,12 +626,31 @@ body{
     .footer h6{
         font-size: small;
     }
+
+    /* hero product */
+    .hero #bg-hero{
+        height: 120vb;
+    }
+    .containt-hero{
+        flex-direction: column;
+    }
+    .containt-hero img{
+        object-fit: cover; 
+        display: block; 
+        width: 200px;
+        height: auto;
+    }
+    /* img product */
+    #img-product{
+        width: 200px !important;
+        height: 200px !important;
+    }
 }
 .card-wrapper{
     display: flex;
     gap: 5px;
     width: 400px !important;
-    height: 500px !important;
+    height: auto !important;
 }
 .swiper-slide{
     margin: 0;
@@ -677,4 +783,40 @@ body{
   .swiper-navBtn{
     display: none;
   }
+}
+
+/* * Popup background */ 
+.popup {
+    display: none; 
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    top: 600px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gambar di popup */
+.popup img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.5);
+    animation: zoomIn 0.3s;
+}
+.close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: white;
+      font-size: 35px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+@keyframes zoomIn {
+    from {transform: scale(0.7);}
+    to {transform: scale(1);}
 }
