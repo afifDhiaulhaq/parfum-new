@@ -429,6 +429,12 @@ body{
 .img-product img{
     width: 100%;
     height: 100%;
+     object-fit: cover; 
+    display: block; 
+}
+.img-product{
+    width: 100%;
+    height: 100%;
 }
 #img-product{
     width: 300px !important;
@@ -437,6 +443,76 @@ body{
 #img-product-content{
     height: 100% !important;
     position: relative;
+}
+
+/* product desc */
+.product-detail-desc{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 50px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.product-detail-desc h2{
+    text-align: center;
+    font-weight: bold;
+}
+.product-detail-desc .description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.product-detail-desc .description div{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.product-detail-desc .description .desc-notes{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+/* marketpalce */
+.marketplace-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
+}
+.marketplace-product .online{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.marketplace-product .online .marketpalces{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    width: 100%;
+}
+.marketplace-product .online .marketpalce{
+    border: 1px solid black;
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+}
+.marketplace-product .online .marketpalce:hover{
+    border: 1px solid transparent;
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 
 
@@ -644,6 +720,21 @@ body{
     #img-product{
         width: 200px !important;
         height: 200px !important;
+    }
+
+    /* description product detail */
+    .product-detail-desc .description{
+        flex-direction: column;
+    }
+    .product-detail-desc .description .desc-notes{
+        border-left: 0px solid black;
+        border-right: 0px solid black;
+        border-top: 1px solid black;        border-bottom: 1px solid black;
+    }
+
+    /* marketplace product */
+    .marketplace-product .online .marketpalces{
+        flex-direction: column;
     }
 }
 .card-wrapper{
